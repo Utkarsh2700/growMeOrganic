@@ -5,7 +5,7 @@ const UserDetailsForm = () => {
   const [name, setName] = useState("");
   const [phoneNum, setPhoneNum] = useState("");
   const [email, setEmail] = useState("");
-  console.log(localStorage);
+
   const handleFormSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (name && phoneNum && email) {
@@ -13,14 +13,11 @@ const UserDetailsForm = () => {
         "userDetails",
         JSON.stringify({ name, phoneNum, email })
       );
-      console.log(localStorage);
 
       window.location.href = "/second";
     } else {
-      console.log(localStorage);
       alert("Please fill all the necessary fields");
     }
-    console.log("name =", name);
   };
   return (
     <Container>
