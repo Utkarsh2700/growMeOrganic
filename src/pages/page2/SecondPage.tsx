@@ -1,5 +1,5 @@
 import { Container } from "@mui/material";
-import FetchFromApi from "../../components/UserDataTable";
+import FetchFromApi from "../../components/userDataTable/UserDataTable";
 import DepartmentList from "../../components/departmentList/DepartmentList";
 
 const SecondPage = () => {
